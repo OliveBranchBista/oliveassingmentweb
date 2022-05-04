@@ -1,16 +1,23 @@
 body{
     width: 100%;
     height: 100%;
+    margin: 0%;
+    padding: 0%;
+
    
     
 }
 /* index */
+
+
+
+
 .alllinks{
     background-color:rgb(247, 218, 0);
-    width:100%;
+    width: 1530px;
     height:80px;
     display: flex;
-    align-items: center;
+    
 }
 
 .one{
@@ -21,7 +28,7 @@ body{
 
 .pond{
     background-image: url(wood.jpg);
-    width:100.8%;
+    width: 1530px;
     height:680px;
     margin: 0px;
     display: flex;
@@ -149,6 +156,51 @@ h3{
     text-decoration: none;
     padding: 20px;
 }
+
+
+
+
+
+body{
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+   body{
+padding: 0px;
+margin: 0px;
+   }
+
+   h2{
+       color: white;
+       font-size: 20px;
+   }
+.alllinks{
+     
+    display: flex;
+    flex-direction:column;
+    font-size: 50px;
+  
+    color: white;
+
+   
+          
+
+
+}
+
+.my{
+    display: none;
+}
+}
+  
 
 
 
