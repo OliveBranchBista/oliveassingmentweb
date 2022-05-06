@@ -46,6 +46,14 @@ h1{
 
 }
 
+
+.grid{
+       display: grid;
+       grid-template-columns:33.333% 33.33% 33.33% ;
+       
+
+}
+
 .about{
     color: aqua;
 }
@@ -57,7 +65,7 @@ h1{
     width:100%;
     height:680px;
     margin: 0px;
-    display: flex;
+  
 
 }
 .all{
@@ -89,7 +97,7 @@ h1{
     width:500px;
     height:500px;
     border: 3px solid white;
-    padding:5px;
+    padding:9px;
     color:red;
     text-align: center;
     margin-top:35px;
@@ -98,36 +106,89 @@ h1{
 
 .hey{
     color:red;
-    float: left;
+ 
+   
+  
 }
 
-/* for contact */
-.mountain{
-    background-image: url(traffic.jpg);
-    width:100%;
-    height:680px;
-    margin: 0px;
-    display: flex;
+/* for contact.html             start */
 
-
-}
 .links{
-    background-color:black;
-    width:100%;
-    height:80px;
-    display: flex;
-    align-items: center;
+background-color:black;
+width:100%;
+height:80px;
+display: flex;
+align-items: center;
 }
 
 .three{
-    color:white;
-    text-decoration: none;
-    padding: 20px;
+color:white;
+text-decoration: none;
+padding: 20px;
 }
 
-h3{
-    color: black;
+
+/* for background */
+.forbackground{
+background-image: url(car11.jpg);
+width:100%;
+height:680px;
+margin: 0px;
+display: flex;
+opacity: 70px;
 }
+
+
+.container{
+margin-top: 50px;
+margin-left: 375px;
+height: 600px;
+width:800px;
+display: grid;
+grid-template-columns: 50% 50%;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+align-content: center;
+
+}
+
+
+.inputt{
+width: 70px;
+margin-right: 250px;
+margin-top: 50px;
+color: rgb(217, 255, 0);
+font-size: 25px;
+}    
+
+h1 {
+margin-top: -20px;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+color: white;
+}
+
+
+li{
+list-style: none;
+font-size: 25px;
+}
+
+a{
+text-decoration: none;
+color:white;
+}
+
+
+input{
+border-radius: 45px;
+border-width: 2px;
+}
+
+/* contact.html            end */
+
+
+
+
+
 
 
 
