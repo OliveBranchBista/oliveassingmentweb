@@ -17,7 +17,6 @@ body{
     align-items: center;
 }
 
-  
 
 .one{
     color: aqua;
@@ -32,34 +31,36 @@ body{
     color: black;
     background-color:aqua;
 }
-
+/* this class is used for background image */
 .pond{
     background-image: url(lighthouse.jpg);
     background-repeat: no-repeat;
-    
-    width: cover;
-    height:cover;
+    width: 1520px;
+    height:900px;
     margin: 0px;
     display: flex;
     
 }
 
-.moly{
+/* this classes are used for desigining my name */
+.myname{
     margin-left: 50px;
     margin-top: 170px;
     padding: 0;
-    height: 100vh;
+    height: 88vh;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
 }
 
-ul{
+.myname ul{
+    height: 200px;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: row-reverse;
 }
 
-ul li{
+.myname ul li{
     list-style:none;
     color:aqua;
     text-shadow: 2px 2px 8px black;
@@ -70,26 +71,88 @@ ul li{
     transition: 2s;
 }
 
-ul li:hover,
-ul li:hover ~ li
+.myname ul li:hover,
+.myname ul li:hover ~ li
 {
     transform: rotate(180deg) translateY(-200px);
     transition: 2s;
     filter: blur(10px);
-    opacity:0;
+    opacity: 0%;
+    
 }
 
 
 .about{
-margin-left: 200px; 
-margin-top: 100px; 
+margin-left: 250px; 
 color: aqua;
 }
+
 .about h1{
+    width: 450px;
 font-family:Georgia, 'Times New Roman', Times, serif;
 color: black;
 text-shadow: 2px 2px 8px aqua;
 }
+
+.root{
+    background-color:black;
+    margin-top: -5px;
+    width: 100%;
+    height: 300px;
+    display: flex;
+}
+
+    .topic{
+        font-size: 25px;
+        margin-left: 55px;
+        color: red;
+    }
+ .open {
+    margin-left: 55px;
+    padding: 5px;
+     margin-top: 2px;
+     display: flex;
+     text-decoration: none;
+     color: aqua;
+     border: 4px;
+     width:105px
+ }   
+
+ .open:hover{
+     color: white;   
+ }
+
+ .contents1 ul {
+     color: aqua;
+     display: flex;
+    margin-top: 60px;
+    margin-left: -160px;
+    
+ }
+.contents1 ul li a{
+    color: aqua; 
+}
+
+ .topic2{
+    margin-left: 160px;
+    margin-top: 40px;
+     font-size: 25px;
+     color: red;
+ }
+ .elements{
+     margin-left: 150px;
+     margin-top: 80px;
+     color:gold ;
+     
+ }
+
+ .map{
+     
+    margin-left: 200px;
+    margin-top: 50px;
+}
+
+
 
 @media (max-width:500px){
     .alllinks{
@@ -109,7 +172,7 @@ text-shadow: 2px 2px 8px aqua;
         color: black;
         background-color:skyblue;
     }
-    ul li{
+    .myname ul li{
         margin-top: -60px;
         margin-left: -20px;
         font-size:5em;
@@ -117,11 +180,40 @@ text-shadow: 2px 2px 8px aqua;
     }
     .about{
         margin-left: -400px; 
-        margin-top: 400px; 
+        margin-top: 200px; 
         color: aqua;
         }
+    .open{
+        width:160px;
+        font-size: 20px;
+        margin-left: 90px;
+    }
+    .root{
+        height: 800px;
+        display:flex;
+        flex-direction: column;
+    }
+
+    .topic2{
+        margin-left: 60px;
+    }
+    .contents1 ul{
+        margin-top: 0px;
+        margin-left: 10px;
+    }
+    .elements{
+        margin-top: 10px;
+        margin-left: 70px;
+    }
+    .map{
+        margin-left: 80px;
+    }
+    .pond{
+        width: 485px;
+    }
         
 }
+
 
 
 
@@ -259,6 +351,7 @@ transform: scale(1.2);}
 .candle{
 
     margin-left: 60px;
+    margin-bottom: 60px;
     border: 4px solid black;
     width: 50%;
     height: 20px;
@@ -382,7 +475,7 @@ width:100%;
 height:680px;
 margin: 0px;
 display: flex;
-opacity: 100px;
+opacity: 100%;
 }
 
 
@@ -392,16 +485,16 @@ margin-left: 375px;
 height: 600px;
 width:800px;
 display: grid;
-grid-template-columns: 50% 50%;
+grid-template-columns: 57% 50%;
 box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 align-content: center;
 }
 
 
 .inputt{
-width: 70px;
+width: 400px;
 margin-right: 250px;
-margin-top: 50px;
+margin-top: 0px;
 color: aqua;
 font-size: 30px;
 
@@ -409,8 +502,7 @@ font-size: 30px;
 }    
 
 .contact h1 {
-margin-top: 40px;
-font-family:Georgia, 'Times New Roman', Times, serif;
+margin-top: -6px;
 color: aqua;
 text-shadow: 2px 2px 8px black;
 }
@@ -420,7 +512,8 @@ text-shadow: 2px 2px 8px black;
     text-shadow: 2px 2px 8px aqua;
 }
 .sendusmessage{
-    margin-top: 20px;
+    margin-left: 70px;
+    margin-top: -30px;
     color: aqua;
     text-shadow: 2px 2px 8px black;
 
@@ -434,6 +527,19 @@ padding: 30px;
 input{
 border-radius: 45px;
 border-width: 2px;
+}
+
+.inputt a{
+    color:white;
+    
+    text-decoration: none;
+    width: 0px;
+}
+
+.inputt a:hover{
+    
+    background-color: white;
+    color: blue;
 }
 li :hover{
    
@@ -458,7 +564,7 @@ li :hover{
     
     .forbackground{
         background-image: url(pond1.jpg);
-        width: cover;
+        width: 483px;
         height:1500px;
     }
     .container{
@@ -470,13 +576,13 @@ li :hover{
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     }
     .sendusmessage{
-        margin-left: 5px;
+        margin-left: 40px;
         margin-top: 90px;
     }
 
     .contact{
-        margin-left: 10px;
-        padding-top: 140px;
+        margin-left: 50px;
+        padding-top: 160px;
         
     }
   
@@ -566,6 +672,21 @@ li :hover{
     font-family:'Times New Roman', Times, serif;
     font-size: 20px;
 }
+.days3{
+    margin-top:-50px;
+    border-radius: 26px 26px 30px 0px;
+    background-image: url(day3.png);
+    background-repeat: no-repeat;
+    background-size: 400px;
+    height: 370px;
+    width: 100%;
+}
+
+.theory2{
+    margin-top: -90px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+}
 
 
 .grid{
@@ -589,7 +710,6 @@ li :hover{
 display: grid;
 grid-template-columns: none;
 }
-
 }
 
 
@@ -599,18 +719,10 @@ grid-template-columns: none;
 
 
 
-/* for site */
-.mood{
-    background-image: url(gully.jpg);
-    width:100%;
-    height:700px;
-    margin: 0px;
-    display: flex;
+/* for site report*/
 
-
-}
 .called{
-    background-color:gray;
+    background-color:rgb(113, 4, 4);
     width:100%;
     height:80px;
     display: flex;
@@ -618,10 +730,222 @@ grid-template-columns: none;
 }
 
 .five{
-    color:black;
+    color:yellow;
     text-decoration: none;
     padding: 20px;
+    padding-block:0px ;
+    border-radius: 9px;
 }
+
+.five:hover{
+    color:rgb(113, 4, 4);
+    background-color: wheat;
+}
+
+
+.multiverse{
+    display: flex;
+}
+.multiverse h1{
+    margin-left: 15%;
+}
+
+.multiverse h2{
+    font-size: 30px;
+    margin-left: 50%;
+}
+
+.universe{
+    margin-left: 20%;
+}
+.universe h1{
+    margin-left: -55px;
+    font-size: 40px;
+}
+.universe p{
+    margin-top: -15px;
+    font-size: 30px;
+}
+
+.galaxy h1{
+    margin-top: 10%;
+    margin-left: 15%;
+    font-size: 30px;
+}
+
+.solarsystem h1{
+    font-size:40px ;
+    margin-left: 15%;
+}
+
+.solarsystem p{
+    margin-left: 20%;
+    margin-top: -15px;
+    font-size: 30px;
+}
+
+.meteors{
+    font-size: 40px;
+    margin-left: 15%;
+}
+
+.asteroids{
+    margin: 1px;
+    padding: 0px;
+    width: 216%;
+    height: 390px;
+    display: flex;
+}
+
+.planets{
+    background-image: url(progresspic.jpg);
+    background-repeat: no-repeat;
+    background-size: 453px;
+    width: 453px;
+    height: 254px;
+    margin-top: 20px;
+    margin-left: 202px;
+    box-shadow: 2px 2px 8px black;
+}
+
+.planets1{
+    background-image: url(day111.jpg);
+    background-repeat: no-repeat;
+    background-size: 292px;
+    width: 292px;
+    height: 292px;
+    margin-top: 20px;
+    margin-left: 40px;
+    box-shadow: 2px 2px 8px black;
+   }
+   .planets2{
+    background-image: url(day22.png);
+    background-repeat: no-repeat;
+    background-size: 293px;
+    width: 292px;
+    height: 290px;
+    margin-top: 20px;
+    margin-left: 40px;
+    box-shadow: 2px 2px 8px black;
+   }
+
+   .satellite{
+    font-size: 40px;
+    margin-left: 15%;
+   }
+
+   .rocket{
+       margin-bottom: 65px;
+    margin-left: 20%;
+    margin-top: -15px;
+    font-size: 30px;
+   }
+
+
+.drone{
+    font-size: 40px;
+    margin-left: 15%;
+}
+
+.clouds{
+    margin: 1px;
+    padding: 0px;
+    width: 216%;
+    height: 390px;
+    display: flex;
+
+}
+.bird{
+    background-image: url(indexvalidated.png);
+    background-repeat: no-repeat;
+    width: 499px;
+    height: 425px;
+    margin-left: 230px;
+    background-size: 500px;
+
+}
+.plane{
+    background-image: url(cssvalidated.png);
+    background-repeat: no-repeat;
+    width: 499px;
+    height: 425px;
+    margin-left: 104px;
+    margin-top: 15px;
+    background-size: 500px;
+}
+@media (max-width:500px){
+    .called{
+       height: 350px;
+       padding: 0px;
+       flex-direction: column;
+   }
+   .five{
+       padding: 0px;
+       margin: 0px;
+       color:yellow;
+   }
+   .multiverse{
+       margin-left: -50px;
+       font-size: 14px;
+   }
+
+   .multiverse h2{
+       margin-left: 150px;
+       font-size: 25px;
+   }
+   .universe h1{
+       font-size: 30px;
+       margin-left: -55px;
+   }
+   .universe p{
+       text-align: center;
+       
+       font-size: 25px;
+       margin-left: -75px;
+   }
+   .galaxy{
+       margin-left: -50px;
+       font-size: 25px;
+   }
+
+   .solarsystem h1{
+    font-size: 30px;
+    margin-left: 50px;
+   }
+
+   .solarsystem p{
+       text-align: center;
+       font-size: 25px;
+       margin-left: 15px;
+   }
+   .asteroids{
+       margin-bottom: -2057px;
+       height:3000px;
+       display: flex;
+       flex-direction: column;
+   }
+   .planets{
+       margin-left: 10px;
+   }
+   .rocket{
+       margin-left:5px ;
+   }
+   .clouds{
+       height: 750px;
+       display: flex;
+       flex-direction: column;
+   }
+   .bird{
+       margin-left: 5px;
+   }
+   .plane{
+       margin-left: 15px;
+   }
+}
+
+
+
+
 
 
 
