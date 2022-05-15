@@ -151,6 +151,11 @@ text-shadow: 2px 2px 8px aqua;
     margin-left: 200px;
     margin-top: 50px;
 }
+.about h3{
+    margin-left: -950px;
+    margin-top: 215px;
+    color: pink;
+}
 
 
 
@@ -210,6 +215,10 @@ text-shadow: 2px 2px 8px aqua;
     }
     .pond{
         width: 485px;
+    }
+    .about h3{
+        margin-top: 20px;
+        margin-left: 0px;
     }
         
 }
